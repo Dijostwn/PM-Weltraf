@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELTRAF - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1e43; /* Warna biru gelap sesuai background */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .login-container {
+            display: flex;
+            width: 95%;
+            max-width: 1200px;
+            height: 80vh;
+            align-items: center;
+        }
+
+        /* Bagian Kiri: Form */
+        .login-form-section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form-section h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .input-group {
+            width: 100%;
+            max-width: 350px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px 20px;
+            background: transparent;
+            border: 2px solid #3c4a8b;
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #7a86b8;
+        }
+
+        input:focus {
+            border-color: #6a4cff;
+        }
+
+        .forgot-password {
+            color: #8a2be2;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            display: block;
+            text-align: center;
+        }
+
+        .login-btn {
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+            background-color: #6a4cff; /* Warna ungu tombol */
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #5539d9;
+            transform: translateY(-2px);
+        }
+
+        /* Bagian Kanan: Gambar */
+        .image-section {
+            flex: 1.5;
+            height: 100%;
+            /* Ganti 'background.jpg' dengan nama file foto gedung Anda */
+            background: url('WhatsApp Image 2026-04-17 at 15.10.28.jpeg') no-repeat center center;
+            background-size: cover;
+            border-radius: 60px; /* Sudut tumpul besar sesuai gambar */
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .image-section {
+                display: none; /* Sembunyikan gambar di layar kecil agar fokus ke login */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-form-section">
+            <h1>WELTRAF</h1>
+            
+            <form action="index (1).html" method="GET" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <div class="input-group">
+                    <input type="text" placeholder="username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="password" required>
+                </div>
+                
+                <a href="#" class="forgot-password">Forgot Password ?</a>
+                
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+        </div>
+
+        <div class="image-section"></div>
+    </div>
+
+</body>
+</html>
